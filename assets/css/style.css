@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+
+/*html{
+    font-size: 62.5%;
+}*/
+*{
+    
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none; 
+    color: #000000;
+   
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1280px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
+}
+.fm_poppines{font-family: Poppins;}
+.fm_inter{font-family: Inter;}
+
+.text_black{color: #3D3D3D;}
+.text_neutral_900{color: var(--Nuetral-nuetral-900, #373940);}
+.text_neutral_800{color: var(--Nuetral-nuetral-800, #484A54);}
+.text_orange{color: var(--Secondary-primary-500, #F4A261);}
+.text_white2{color: var(--White, #F7F7F7);}
+.text_gray1{color: var(--Accent-color, #EAEAEA);}
+.primary_bg{border-radius: 8px;
+    background: var(--Primary-primary-500, #0B5EB6);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);}
+.orange_bg{
+  background: var(--Secondary-color, #F4A261);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.main-transfrom{
+    background-image: url(../images/transform-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+
+}
+.lh_72{line-height: 72px !important;}
+.hero-section .swiper-pagination-bullet {
+    background: var(--swiper-pagination-bullet-inactive-color, #FFF);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+}
+.hero-section .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #F4A261;
+}
+.introduction-card{
+    background-image: url(../images/introduction-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 6px;
+    border-radius: 8px;
+}
+.intro-man-img{
+    margin-top: -80px;
+}
+.team-card{
+    border-radius: 12px;
+    border: 1px solid var(--Nuetral-nuetral-100, #D9DADF);
+    background: #FFF;
+}
+.approch-card{
+    background-image: url(../images/approch-card.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+}
+.approch-card1::after {
+    position: absolute;
+    content: '';
+    top: 160px;
+    border-radius: 10px;
+    background: #1B1D20;
+    width: 53px;
+    height: 30px;
+    right: -36px;
+}
+.approch-card3::after {
+    position: absolute;
+    content: '';
+    top: 160px;
+    border-radius: 10px;
+    background: #1B1D20;
+    width: 53px;
+    height: 30px;
+    right: -36px;
+}
+.approch-card2::after {
+    position: absolute;
+    content: '';
+    bottom: -17px;
+    /* border-radius: 10px; */
+    background: #1B1D20;
+    width: 33px;
+    height: 53px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.approch-no{
+    font-size: 140px;  /* Adjust size as needed */
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    line-height: normal;
+    /* Gradient Text Effect */
+    background: linear-gradient(180deg, #ffffff, rgba(0, 0, 0, 0.33));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.coach-section{
+    background-image: url(../images/coach-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*------------------------------------- *********** Section 1 ********** ------------------------------*/
+
+@media screen and (max-width:786px) {
+.lh_72{line-height: unset !important;}
+  
+}
+@media screen and (max-width:991px) {
+    .approch-card3::after {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:640px) {
+    .approch-card1::after, .approch-card3::after  {
+        position: absolute;
+        content: '';
+        bottom: -37px;
+        top: unset;
+        /* border-radius: 10px; */
+        background: #1B1D20;
+        /* background: red; */
+        width: 33px;
+        height: 53px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+    }
+}

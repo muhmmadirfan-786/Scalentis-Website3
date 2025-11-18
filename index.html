@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Scalentis erbringt IT, Software, Vertriebs und Marketingleistungen sowie Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen.">
+        <title>Scalentis | IT, Software, Vertrieb, Marketing und digitale Prozesse</title>
+        <!---------------------- Tailwind CSS ---------------------->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!---------------------- Font Awesome ---------------------->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <!-- Swiper.js CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!---------------------- Flowbite CSS ---------------------->
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body class="bg-[#FAFAFA] text-black">
+        <!-------------------------- Navbar ------------------------->
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed w-full z-10">
+            <div class="container">
+                <div class="flex items-center justify-between py-5">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="assets/images/icons/Logo-AS.svg" class="w-full" alt="Scalentis Logo">
+                    </a>
+        
+                    <div class="flex items-center sm:gap-5 gap-2">
+                       <div>
+                        <a href="#" class="block py-2 px-3 font-bold bg-transparent text-[#3D3D3D] text-1xl md:p-0" aria-current="page" data-i18n="nav.start">Start</a>
+                       </div> 
+                        <a href="#" class="orange_bg sm:px-4 px-2 py-2 rounded-lg text-white text-base font-semibold" data-i18n="nav.cta">Kostenlose Erstberatung</a>
+                        <!-- Language Switcher -->
+                        <div class="flex items-center gap-1 ml-2 text-sm">
+                            <button type="button" class="px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch active" data-lang="de">DE</button>
+                            <button type="button" class="px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch" data-lang="en">EN</button>
+                            <button type="button" class="px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch" data-lang="hu">HU</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-------------------------- Hero Section ------------------------->
+        <section class="hero-section pt-[100px] pb-6">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row gap-6 ">
+                    <!-- Left Column (Fixed Width) -->
+                    <div class="main-transfrom lg:max-w-[714px] w-full sm:px-6 px-3 py-7">
+                        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold lh_72 text_white2 max-w-[600px] w-full">
+                            <span class="text_orange" data-i18n="hero.title.highlight">Scalentis</span>
+                            <span data-i18n="hero.title.rest">IT, Software, Vertrieb, Marketing und digitale Prozesse aus einer Hand</span>
+                        </h2>
+                        <p class="mt-4 text_gray1 sm:text-xl text-lg font-normal md:max-w-[572px] w-full" data-i18n="hero.text">
+                            Wir planen, liefern und betreiben Lösungen für Ihren digitalen Erfolg. Von stabiler IT und Software über verkaufsstarke Vertriebs und Marketingmaßnahmen bis zur ganzheitlichen Beratung und Umsetzung Ihrer digitalen Geschäftsprozesse.
+                        </p>
+                        <a href="#" class="block primary_bg text-white text-lg px-5 py-3 mt-4 w-fit" data-i18n="hero.cta">
+                            Projekt besprechen
+                        </a>
+                    </div>
+                    <!-- Right Column (Swiper Slider) -->
+                    <div class="flex-1 lg:max-w-[514px] w-full">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <img src="assets/images/slide1.png" alt="Moderne IT Arbeitsplätze und sichere Infrastruktur" class="rounded-lg w-full h-full">
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <img src="assets/images/slide2.png" alt="Softwareentwicklung und Integration" class="rounded-lg w-full h-full">
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <img src="assets/images/slide3.png" alt="Vertriebslösungen und CRM Umsetzung" class="rounded-lg w-full h-full">
+                                </div>
+                                <!-- Slide 4 -->
+                                <div class="swiper-slide">
+                                    <img src="assets/images/slide4.png" alt="Marketing Automatisierung und Kampagnen" class="rounded-lg w-full h-full">
+                                </div>
+                                <!-- Slide 5 -->
+                                <div class="swiper-slide">
+                                    <img src="assets/images/slide5.png" alt="Digitale Prozessberatung und Umsetzung" class="rounded-lg w-full h-full">
+                                </div>
+                                <!-- Slide 6 -->
+                                <div class="swiper-slide">
+                                    <img src="assets/images/slide6.png" alt="Reporting und laufende Optimierung" class="rounded-lg w-full h-full">
+                                </div>
+                            </div>
+                            <!-- Navigation Buttons -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction-card mt-[80px]">
+                    <div class="flex md:flex-nowrap flex-wrap gap-4 md:flex-row flex-col-reverse justify-between items-center md:pb-0 pb-8">
+                        <div class="w-full max-w-[695px] ps-6">
+                            <h2 class="text-white text-4xl font-semibold" data-i18n="intro.title">Einführung</h2>
+                            <p class="text-white text-lg font-normal mt-4" data-i18n="intro.text">
+                                Gegenstand des Unternehmens ist die Erbringung von IT, Software, Vertriebs und Marketingleistungen sowie die Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen. Scalentis vereint Technologie, Methodik und Umsetzungskraft. So entstehen nutzerfreundliche Systeme, messbare Pipeline, starke Kampagnen und effiziente Abläufe in Ihrem Tagesgeschäft.
+                            </p>
+                        </div>
+                        <div class="intro-man-img md:pe-14 pe-2">
+                            <img src="assets/images/intro-man.png" alt="Scalentis Team bei der Umsetzung digitaler Projekte">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white md:py-[80px] py-[40px]">
+            <div class="container">
+                <h2 style="line-height: normal;" class="w-full max-w-lg lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 text-center fm_poppines" data-i18n="why.title">Warum Scalentis der richtige Partner ist</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-9">
+                    <div class="team-card px-4 py-8 text-center">
+                        <img class="w-fit m-auto" src="assets/images/icons/align-team.svg" alt="Strategie Icon">
+                        <h2 class="text_neutral_800 text-lg font-semibold pt-2 fm_poppines" data-i18n="why.card1.title">Klare Digitalstrategie</h2>
+                        <p class="fm_poppines text-sm text_neutral_800 font-normal pt-2" data-i18n="why.card1.text">IT, Software, Vertrieb und Marketing sind auf gemeinsame Ziele ausgerichtet. Wir definieren messbare Ergebnisse und einen realistischen Fahrplan.</p>
+                    </div>
+                    <div class="team-card px-4 py-8 text-center">
+                        <img class="w-fit m-auto" src="assets/images/icons/win-rates.svg" alt="Wachstum Icon">
+                        <h2 class="text_neutral_800 text-lg font-semibold pt-2 fm_poppines" data-i18n="why.card2.title">Mehr Umsatzpotenzial</h2>
+                        <p class="fm_poppines text-sm text_neutral_800 font-normal pt-2" data-i18n="why.card2.text">CRM, Automatisierung und saubere Daten sorgen für mehr qualifizierte Anfragen, bessere Konversion und stabile Kundenbindung.</p>
+                    </div>
+                    <div class="team-card px-4 py-8 text-center">
+                        <img class="w-fit m-auto" src="assets/images/icons/align-team.svg" alt="Sicherheit Icon">
+                        <h2 class="text_neutral_800 text-lg font-semibold pt-2 fm_poppines" data-i18n="why.card3.title">Robuste IT und Sicherheit</h2>
+                        <p class="fm_poppines text-sm text_neutral_800 font-normal pt-2" data-i18n="why.card3.text">Proaktive Betreuung, Compliance Unterstützung und schnelle Reaktion schützen Systeme, Daten und Nutzer.</p>
+                    </div>
+                    <div class="team-card px-4 py-8 text-center">
+                        <img class="w-fit m-auto" src="assets/images/icons/align-team.svg" alt="Effizienz Icon">
+                        <h2 class="text_neutral_800 text-lg font-semibold pt-2 fm_poppines" data-i18n="why.card4.title">Effiziente Prozesse</h2>
+                        <p class="fm_poppines text-sm text_neutral_800 font-normal pt-2" data-i18n="why.card4.text">Digitale Workflows reduzieren manuelle Arbeit. Teams arbeiten schneller, Fehler sinken und Kosten bleiben planbar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="md:py-[80px] py-[40px] ">
+            <div class="container">
+                <h2 style="line-height: normal;" class="w-full lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 text-center fm_poppines" data-i18n="approach.title">Unsere Vorgehensweise</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-9">
+                    <div class="approch-card approch-card1 p-4 flex">
+                        <div class="flex items-center">
+                            <p class="approch-no">1</p>
+                            <div>
+                                <h2 class="text-xl font-semibold text-white" data-i18n="approach.card1.title">Analyse und Zielbild</h2>
+                                <p class="text-sm text-white font-normal pt-1 pe-6" data-i18n="approach.card1.text">Wir bewerten IT Landschaft, Software, Vertrieb und Marketing. Daraus entsteht ein klares Zielbild mit Prioritäten für schnelle Wirkung und nachhaltige Entwicklung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <div class="approch-card approch-card2 p-4">
+                            <div class="flex items-center sm:flex-row flex-row-reverse">
+                                <div>
+                                    <h2 class="text-xl font-semibold text-white" data-i18n="approach.card2.title">Konzept und Roadmap</h2>
+                                    <p class="text-sm text-white font-normal pt-1" data-i18n="approach.card2.text">Wir planen Architektur, Prozesse, Tools und Verantwortlichkeiten. Service Level, Messpunkte und Zeitplan sind verständlich dokumentiert.</p>
+                                </div>
+                                <p class="approch-no">2</p>
+                            </div>
+                        </div>
+                        <div class="approch-card approch-card3 p-4">
+                            <div class="flex items-center sm:flex-row flex-row-reverse">
+                                <div>
+                                    <h2 class="text-xl font-semibold text-white" data-i18n="approach.card3.title">
+                                        Umsetzung und Enablement
+                                    </h2>
+                                    <p class="text-sm text-white font-normal pt-1" data-i18n="approach.card3.text">Wir implementieren Systeme, integrieren Daten, automatisieren Workflows und schulen Teams. Die Arbeit im Alltag läuft ohne Bruch weiter.</p>
+                                </div>
+                                <p class="approch-no">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="approch-card px-2 flex">
+                        <div class="flex items-center">
+                            <p class="approch-no">4</p>
+                            <div>
+                                <h2 class="text-xl font-semibold text-white" data-i18n="approach.card4.title">Betrieb und Optimierung</h2>
+                                <p class="text-sm text-white font-normal pt-1" data-i18n="approach.card4.text">Monitoring, Betreuung und fortlaufende Verbesserung mit transparentem Reporting. Wir justieren Kampagnen, Prozesse und Systeme für beständige Ergebnisse.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white md:py-[80px] py-[40px]">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row gap-6 ">
+                    <!-- Left Column (Fixed Width) -->
+                    <div class="lg:max-w-[576px] w-full">
+                        <h2 style="line-height: normal;" class="w-full lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 fm_poppines" data-i18n="results.title">Wichtigste Ergebnisse</h2>
+                        <div class="flex items-center gap-3 pt-3">
+                            <img src="assets/images/icons/check-circle-broken.svg" alt="Haken">
+                            <h2 class="text-lg font-semibold text_neutral_800" data-i18n="results.card1.title">Stabile Systeme und zufriedene Nutzer</h2>
+                        </div>
+                        <p class="pt-3 text-sm font-normal text_neutral_800" data-i18n="results.card1.text">Proaktive Betreuung und saubere Umsetzung sichern hohe Verfügbarkeit und reibungslose Arbeit im Team.</p>
+                        <!-- 2 -->
+                        <div class="flex items-center gap-3 pt-3">
+                            <img src="assets/images/icons/check-circle-broken.svg" alt="Haken">
+                            <h2 class="text-lg font-semibold text_neutral_800" data-i18n="results.card2.title">Mehr qualifizierte Pipeline</h2>
+                        </div>
+                        <p class="pt-3 text-sm font-normal text_neutral_800" data-i18n="results.card2.text">Gute Daten, klare Prozesse und passende Kampagnen steigern Anfragen und Abschlussquoten.</p>
+                        <!-- 3 -->
+                        <div class="flex items-center gap-3 pt-3">
+                            <img src="assets/images/icons/check-circle-broken.svg" alt="Haken">
+                            <h2 class="text-lg font-semibold text_neutral_800" data-i18n="results.card3.title">Sichere Daten und Compliance</h2>
+                        </div>
+                        <p class="pt-3 text-sm font-normal text_neutral_800" data-i18n="results.card3.text">Identitätskontrollen, Schutz der Endpunkte, Backups und geregelte Abläufe reduzieren Risiko und schaffen Vertrauen.</p>
+                        <!-- 4 -->
+                        <div class="flex items-center gap-3 pt-3">
+                            <img src="assets/images/icons/check-circle-broken.svg" alt="Haken">
+                            <h2 class="text-lg font-semibold text_neutral_800" data-i18n="results.card4.title">Transparenz bei Kosten und Wirkung</h2>
+                        </div>
+                        <p class="pt-3 text-sm font-normal text_neutral_800" data-i18n="results.card4.text">Berichte und Kennzahlen machen Leistung sichtbar und erleichtern Planung und Entscheidungen.</p>
+                    </div>
+                    <!-- Right Column (Image) -->
+                    <div class="flex-1 lg:max-w-[608px] w-full">
+                        <img src="assets/images/key-benefits.png" alt="Ergebnisse der Zusammenarbeit mit Scalentis" class="rounded-lg w-full h-full">
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:py-[80px] py-[40px] coach-section">
+                <div class="container">
+                    <div class="w-full bg-white max-w-[1135px] pt-[80px] pb-[78px] ml-auto rounded-lg px-4">
+                        <div class="flex flex-col items-center lg:flex-row gap-6 ">
+                            <!-- Right Column (Image) -->
+                            <div class="flex-1 lg:max-w-[605px] w-full lg:ml-[-96px]">
+                                <img src="assets/images/alexandros.png" alt="Scalentis Team" class="rounded-lg w-full h-full">
+                            </div>
+                            <!-- Left Column (Fixed Width) -->
+                            <div class="lg:max-w-[503px] w-full ">
+                                <h2 style="line-height: normal;" class="w-full lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 fm_poppines" data-i18n="about.title">Über Scalentis</h2>
+                                <p class="pt-3 text-base font-normal text_neutral_800 pt-4" data-i18n="about.text">Wir verbinden Erfahrung aus IT Betrieb, Softwareentwicklung, Vertrieb und Marketing. Unsere Teams denken unternehmerisch und liefern greifbare Ergebnisse. Kommunikation ist klar, Projekte sind planbar und der Nutzen wird messbar.</p>
+                                <h3 class="text-xl text_neutral_800 font-semibold pt-6" data-i18n="about.subTitle">Bereit für den nächsten Schritt</h3>
+                                <p class="pt-3 text-base font-normal text_neutral_800 pt-4" data-i18n="about.subText">Lassen Sie uns sprechen und den passenden Einstieg wählen. Von schnellem Audit bis zu laufender Betreuung erhalten Sie genau den Umfang, den Ihr Unternehmen braucht.</p>
+                                <a href="#" class="bg-[#0B5EB6] w-fit block hover:bg-blue-700 text-lg text-white font-medium py-3 px-6 rounded-lg mt-12" data-i18n="about.cta">
+                                    Kostenlose Erstberatung
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:py-[80px] py-[40px] bg-white">
+                <div class="container">
+                    <div class="grid md:grid-cols-2 gap-8 ">
+                        <!-- Left Side -->
+                        <div>
+                            <h2 class="text_orange text-lg font-semibold" data-i18n="contact.label">Kontakt</h2>
+                            <h2 style="line-height: normal;" class="w-full lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 fm_poppines" data-i18n="contact.title">Nehmen Sie Kontakt auf</h2>
+                            <p class="text-[#737373] w-full lg:max-w-[540px] font-normal text-lg mt-3" data-i18n="contact.text">
+                                Wir beantworten Fragen zu IT, Software, Vertrieb, Marketing und digitalen Prozessen. Gemeinsam finden wir den besten Startpunkt und planen die nächsten Schritte.
+                            </p>
+                            <div class="mt-6">
+                                <div class="flex items-center space-x-4">
+                                    <img src="assets/images/icons/loction.svg" alt="Standort">
+                                    <div>
+                                        <p class="text-2xl font-semibold text-[#373940] fm_inter" data-i18n="contact.officeLabel">Hauptsitz</p>
+                                        <p class="text-[#737373] font-normal text-lg" data-i18n="contact.officeValue">Ihre Adresse hier</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <div class="flex items-center space-x-4">
+                                    <img src="assets/images/icons/phone.svg" alt="Telefon">
+                                    <div>
+                                        <p class="text-2xl font-semibold text-[#373940] fm_inter" data-i18n="contact.phoneLabel">Telefon</p>
+                                        <p class="text-[#737373] font-normal text-lg" data-i18n="contact.phoneValue">+49 000 000000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <div class="flex items-center space-x-4">
+                                    <img src="assets/images/icons/email.svg" alt="E Mail">
+                                    <div>
+                                        <p class="text-2xl font-semibold text-[#373940] fm_inter" data-i18n="contact.mailLabel">E Mail</p>
+                                        <p class="text-[#737373] font-normal text-lg" data-i18n="contact.mailValue">contact@scalentis.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Side - Contact Form -->
+                        <div class="bg-[#F7F8F7] p-6 rounded-lg shadow-md">
+                            <div class="flex gap-3">
+                                <img src="assets/images/icons/contact-us.svg" alt="Kontaktformular">
+                                <h2 style="line-height: normal;" class="w-full md:text-3xl text-2xl m-auto font-semibold text_neutral_900 fm_poppines" data-i18n="contact.formTitle">Ihre Nachricht</h2>
+                            </div>
+                            <form class="mt-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.nameLabel">Name</label>
+                                        <input type="text" class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Ihr Name">
+                                    </div>
+                                    <div>
+                                        <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.phoneLabel">Telefon</label>
+                                        <input type="text" class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.phonePlaceholder" placeholder="Ihre Telefonnummer">
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.mailLabel">E Mail</label>
+                                    <input type="email" class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.mailPlaceholder" placeholder="Ihre E Mail Adresse">
+                                </div>
+                                <div class="mt-4">
+                                    <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.messageLabel">Nachricht</label>
+                                    <textarea class="p-3 mt-1 border border-gray-300 rounded-lg w-full h-32 focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Beschreiben Sie Ihr Vorhaben oder Ihre Frage"></textarea>
+                                </div>
+                                <button type="submit" class="bg-[#F4A261] text-white font-semibold py-3 px-6 w-full mt-4 rounded-lg hover:bg-orange-600" data-i18n="contact.form.submit">
+                                    Nachricht senden
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unternehmensgegenstand -->
+            <section class="bg-white pb-4">
+                <div class="container">
+                    <div class="bg-[#F7F8F7] rounded-lg p-4 text-sm text_neutral_800" data-i18n="legal.object">
+                        Gegenstand des Unternehmens ist die Erbringung von IT, Software, Vertriebs und Marketingleistungen sowie die Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen. Die Gesellschaft kann alle Geschäfte tätigen, die dem Gesellschaftszweck unmittelbar oder mittelbar zu dienen geeignet sind.
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-section bg-black py-5">
+                <div class="container">
+                    <div class="flex items-center justify-center flex-wrap gap-3">
+                        <p class="text-white text-sm font-normal" data-i18n="footer.text">© Copyright Scalentis | Alle Rechte vorbehalten</p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-------------------------- Scripts ------------------------->
+            <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,container-queries"></script>
+            <!---------------------- Flowbite JS ---------------------->
+            <script src="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+
+                const translations = {
+                    de: {
+                        "meta.title": "Scalentis | IT, Software, Vertrieb, Marketing und digitale Prozesse",
+                        "meta.description": "Scalentis erbringt IT, Software, Vertriebs und Marketingleistungen sowie Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen.",
+                        "nav.start": "Start",
+                        "nav.cta": "Kostenlose Erstberatung",
+                        "hero.title.highlight": "Scalentis",
+                        "hero.title.rest": "IT, Software, Vertrieb, Marketing und digitale Prozesse aus einer Hand",
+                        "hero.text": "Wir planen, liefern und betreiben Lösungen für Ihren digitalen Erfolg. Von stabiler IT und Software über verkaufsstarke Vertriebs und Marketingmaßnahmen bis zur ganzheitlichen Beratung und Umsetzung Ihrer digitalen Geschäftsprozesse.",
+                        "hero.cta": "Projekt besprechen",
+                        "intro.title": "Einführung",
+                        "intro.text": "Gegenstand des Unternehmens ist die Erbringung von IT, Software, Vertriebs und Marketingleistungen sowie die Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen. Scalentis vereint Technologie, Methodik und Umsetzungskraft. So entstehen nutzerfreundliche Systeme, messbare Pipeline, starke Kampagnen und effiziente Abläufe in Ihrem Tagesgeschäft.",
+                        "why.title": "Warum Scalentis der richtige Partner ist",
+                        "why.card1.title": "Klare Digitalstrategie",
+                        "why.card1.text": "IT, Software, Vertrieb und Marketing sind auf gemeinsame Ziele ausgerichtet. Wir definieren messbare Ergebnisse und einen realistischen Fahrplan.",
+                        "why.card2.title": "Mehr Umsatzpotenzial",
+                        "why.card2.text": "CRM, Automatisierung und saubere Daten sorgen für mehr qualifizierte Anfragen, bessere Konversion und stabile Kundenbindung.",
+                        "why.card3.title": "Robuste IT und Sicherheit",
+                        "why.card3.text": "Proaktive Betreuung, Compliance Unterstützung und schnelle Reaktion schützen Systeme, Daten und Nutzer.",
+                        "why.card4.title": "Effiziente Prozesse",
+                        "why.card4.text": "Digitale Workflows reduzieren manuelle Arbeit. Teams arbeiten schneller, Fehler sinken und Kosten bleiben planbar.",
+                        "approach.title": "Unsere Vorgehensweise",
+                        "approach.card1.title": "Analyse und Zielbild",
+                        "approach.card1.text": "Wir bewerten IT Landschaft, Software, Vertrieb und Marketing. Daraus entsteht ein klares Zielbild mit Prioritäten für schnelle Wirkung und nachhaltige Entwicklung.",
+                        "approach.card2.title": "Konzept und Roadmap",
+                        "approach.card2.text": "Wir planen Architektur, Prozesse, Tools und Verantwortlichkeiten. Service Level, Messpunkte und Zeitplan sind verständlich dokumentiert.",
+                        "approach.card3.title": "Umsetzung und Enablement",
+                        "approach.card3.text": "Wir implementieren Systeme, integrieren Daten, automatisieren Workflows und schulen Teams. Die Arbeit im Alltag läuft ohne Bruch weiter.",
+                        "approach.card4.title": "Betrieb und Optimierung",
+                        "approach.card4.text": "Monitoring, Betreuung und fortlaufende Verbesserung mit transparentem Reporting. Wir justieren Kampagnen, Prozesse und Systeme für beständige Ergebnisse.",
+                        "results.title": "Wichtigste Ergebnisse",
+                        "results.card1.title": "Stabile Systeme und zufriedene Nutzer",
+                        "results.card1.text": "Proaktive Betreuung und saubere Umsetzung sichern hohe Verfügbarkeit und reibungslose Arbeit im Team.",
+                        "results.card2.title": "Mehr qualifizierte Pipeline",
+                        "results.card2.text": "Gute Daten, klare Prozesse und passende Kampagnen steigern Anfragen und Abschlussquoten.",
+                        "results.card3.title": "Sichere Daten und Compliance",
+                        "results.card3.text": "Identitätskontrollen, Schutz der Endpunkte, Backups und geregelte Abläufe reduzieren Risiko und schaffen Vertrauen.",
+                        "results.card4.title": "Transparenz bei Kosten und Wirkung",
+                        "results.card4.text": "Berichte und Kennzahlen machen Leistung sichtbar und erleichtern Planung und Entscheidungen.",
+                        "about.title": "Über Scalentis",
+                        "about.text": "Wir verbinden Erfahrung aus IT Betrieb, Softwareentwicklung, Vertrieb und Marketing. Unsere Teams denken unternehmerisch und liefern greifbare Ergebnisse. Kommunikation ist klar, Projekte sind planbar und der Nutzen wird messbar.",
+                        "about.subTitle": "Bereit für den nächsten Schritt",
+                        "about.subText": "Lassen Sie uns sprechen und den passenden Einstieg wählen. Von schnellem Audit bis zu laufender Betreuung erhalten Sie genau den Umfang, den Ihr Unternehmen braucht.",
+                        "about.cta": "Kostenlose Erstberatung",
+                        "contact.label": "Kontakt",
+                        "contact.title": "Nehmen Sie Kontakt auf",
+                        "contact.text": "Wir beantworten Fragen zu IT, Software, Vertrieb, Marketing und digitalen Prozessen. Gemeinsam finden wir den besten Startpunkt und planen die nächsten Schritte.",
+                        "contact.officeLabel": "Hauptsitz",
+                        "contact.officeValue": "Ihre Adresse hier",
+                        "contact.phoneLabel": "Telefon",
+                        "contact.phoneValue": "+49 000 000000",
+                        "contact.mailLabel": "E Mail",
+                        "contact.mailValue": "contact@scalentis.com",
+                        "contact.formTitle": "Ihre Nachricht",
+                        "contact.form.nameLabel": "Name",
+                        "contact.form.namePlaceholder": "Ihr Name",
+                        "contact.form.phoneLabel": "Telefon",
+                        "contact.form.phonePlaceholder": "Ihre Telefonnummer",
+                        "contact.form.mailLabel": "E Mail",
+                        "contact.form.mailPlaceholder": "Ihre E Mail Adresse",
+                        "contact.form.messageLabel": "Nachricht",
+                        "contact.form.messagePlaceholder": "Beschreiben Sie Ihr Vorhaben oder Ihre Frage",
+                        "contact.form.submit": "Nachricht senden",
+                        "legal.object": "Gegenstand des Unternehmens ist die Erbringung von IT, Software, Vertriebs und Marketingleistungen sowie die Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen. Die Gesellschaft kann alle Geschäfte tätigen, die dem Gesellschaftszweck unmittelbar oder mittelbar zu dienen geeignet sind.",
+                        "footer.text": "© Copyright Scalentis | Alle Rechte vorbehalten"
+                    },
+                    en: {
+                        "meta.title": "Scalentis | IT, software, sales, marketing and digital processes",
+                        "meta.description": "Scalentis provides IT, software, sales and marketing services as well as consulting and implementation of digital business processes for companies.",
+                        "nav.start": "Home",
+                        "nav.cta": "Free consultation",
+                        "hero.title.highlight": "Scalentis",
+                        "hero.title.rest": "IT, software, sales, marketing and digital processes from one partner",
+                        "hero.text": "We plan, deliver and operate solutions for your digital success. From stable IT and software to revenue focused sales and marketing activities and full consulting and implementation of your digital business processes.",
+                        "hero.cta": "Discuss your project",
+                        "intro.title": "Introduction",
+                        "intro.text": "The company provides IT, software, sales and marketing services as well as consulting and implementation of digital business processes for companies. Scalentis unites technology, methodology and execution. This creates user friendly systems, measurable pipeline, strong campaigns and efficient workflows in your daily business.",
+                        "why.title": "Why Scalentis is the right partner",
+                        "why.card1.title": "Clear digital strategy",
+                        "why.card1.text": "IT, software, sales and marketing follow the same goals. We define measurable outcomes and a realistic roadmap.",
+                        "why.card2.title": "More revenue potential",
+                        "why.card2.text": "CRM, automation and clean data increase qualified leads, conversion rates and customer retention.",
+                        "why.card3.title": "Robust IT and security",
+                        "why.card3.text": "Proactive support, compliance guidance and fast response protect systems, data and users.",
+                        "why.card4.title": "Efficient processes",
+                        "why.card4.text": "Digital workflows reduce manual work. Teams move faster, errors go down and costs stay predictable.",
+                        "approach.title": "Our approach",
+                        "approach.card1.title": "Analysis and target picture",
+                        "approach.card1.text": "We review IT landscape, software, sales and marketing. The result is a clear target picture with priorities for quick impact and long term progress.",
+                        "approach.card2.title": "Concept and roadmap",
+                        "approach.card2.text": "We plan architecture, processes, tools and responsibilities. Service levels, metrics and timing are documented in a simple way.",
+                        "approach.card3.title": "Implementation and enablement",
+                        "approach.card3.text": "We implement systems, integrate data, automate workflows and train your teams. Daily business continues without disruption.",
+                        "approach.card4.title": "Operations and optimisation",
+                        "approach.card4.text": "Monitoring, support and continuous improvement with transparent reporting. We adjust campaigns, processes and systems for consistent results.",
+                        "results.title": "Key outcomes",
+                        "results.card1.title": "Stable systems and happy users",
+                        "results.card1.text": "Proactive operations and clean implementation keep availability high and work smooth for your teams.",
+                        "results.card2.title": "More qualified pipeline",
+                        "results.card2.text": "Good data, clear processes and the right campaigns increase demand and close rates.",
+                        "results.card3.title": "Secure data and compliance",
+                        "results.card3.text": "Identity controls, endpoint protection, backups and defined procedures reduce risk and build trust.",
+                        "results.card4.title": "Transparency in cost and impact",
+                        "results.card4.text": "Reports and metrics make performance visible and support planning and decisions.",
+                        "about.title": "About Scalentis",
+                        "about.text": "We combine experience in IT operations, software development, sales and marketing. Our teams think like entrepreneurs and deliver tangible results. Communication is clear, projects are predictable and value becomes measurable.",
+                        "about.subTitle": "Ready for the next step",
+                        "about.subText": "Let us talk and choose the right starting point. From a quick audit to ongoing services you receive exactly the scope your company needs.",
+                        "about.cta": "Free consultation",
+                        "contact.label": "Contact",
+                        "contact.title": "Get in touch",
+                        "contact.text": "We answer questions about IT, software, sales, marketing and digital processes. Together we choose the best starting point and plan the next steps.",
+                        "contact.officeLabel": "Head office",
+                        "contact.officeValue": "Your address here",
+                        "contact.phoneLabel": "Phone",
+                        "contact.phoneValue": "+49 000 000000",
+                        "contact.mailLabel": "Email",
+                        "contact.mailValue": "contact@scalentis.com",
+                        "contact.formTitle": "Your message",
+                        "contact.form.nameLabel": "Name",
+                        "contact.form.namePlaceholder": "Your name",
+                        "contact.form.phoneLabel": "Phone",
+                        "contact.form.phonePlaceholder": "Your phone number",
+                        "contact.form.mailLabel": "Email",
+                        "contact.form.mailPlaceholder": "Your email address",
+                        "contact.form.messageLabel": "Message",
+                        "contact.form.messagePlaceholder": "Describe your project or question",
+                        "contact.form.submit": "Send message",
+                        "legal.object": "The company provides IT, software, sales and marketing services as well as consulting and implementation of digital business processes for companies. The company may carry out all transactions that directly or indirectly serve this corporate purpose.",
+                        "footer.text": "© Copyright Scalentis | All rights reserved"
+                    },
+                    hu: {
+                        "meta.title": "Scalentis | IT, szoftver, értékesítés, marketing és digitális folyamatok",
+                        "meta.description": "A Scalentis IT, szoftver, értékesítési és marketing szolgáltatásokat, valamint vállalatok számára digitális üzleti folyamatok tanácsadását és megvalósítását nyújtja.",
+                        "nav.start": "Kezdőlap",
+                        "nav.cta": "Ingyenes konzultáció",
+                        "hero.title.highlight": "Scalentis",
+                        "hero.title.rest": "IT, szoftver, értékesítés, marketing és digitális folyamatok egy kézből",
+                        "hero.text": "Digitális sikeréhez tervezzük, szállítjuk és üzemeltetjük a megoldásokat. Stabil IT és szoftver, eredményes értékesítési és marketing tevékenység, valamint digitális üzleti folyamatainak tanácsadása és megvalósítása.",
+                        "hero.cta": "Projekt egyeztetése",
+                        "intro.title": "Bevezetés",
+                        "intro.text": "A társaság IT, szoftver, értékesítési és marketing szolgáltatásokat, valamint vállalatok számára digitális üzleti folyamatok tanácsadását és megvalósítását nyújtja. A Scalentis egyesíti a technológiát, a módszertant és a gyakorlati megvalósítást. Így jönnek létre felhasználóbarát rendszerek, mérhető értékesítési csatorna, erős kampányok és hatékony mindennapi folyamatok.",
+                        "why.title": "Miért jó választás a Scalentis",
+                        "why.card1.title": "Átlátható digitális stratégia",
+                        "why.card1.text": "Az IT, a szoftver, az értékesítés és a marketing közös célokra épül. Mérhető eredményeket és reális ütemtervet határozunk meg.",
+                        "why.card2.title": "Nagyobb árbevételi potenciál",
+                        "why.card2.text": "CRM, automatizálás és jó minőségű adatok növelik a minőségi érdeklődők számát, a konverziót és az ügyfélmegtartást.",
+                        "why.card3.title": "Stabil IT és biztonság",
+                        "why.card3.text": "Proaktív támogatás, megfelelés támogatása és gyors reakció védi a rendszereket, az adatokat és a felhasználókat.",
+                        "why.card4.title": "Hatékony folyamatok",
+                        "why.card4.text": "A digitális munkafolyamatok csökkentik a kézi munkát. A csapatok gyorsabban dolgoznak, kevesebb a hiba és a költségek jobban tervezhetők.",
+                        "approach.title": "Munkamódszerünk",
+                        "approach.card1.title": "Elemzés és célkép",
+                        "approach.card1.text": "Felmérjük az IT környezetet, a szoftvert, az értékesítést és a marketinget. Ennek eredménye egy világos célkép és fontossági sorrend a gyors és hosszú távú eredményekhez.",
+                        "approach.card2.title": "Koncepció és ütemterv",
+                        "approach.card2.text": "Megtervezzük az architektúrát, a folyamatokat, az eszközöket és a felelősségi köröket. A szolgáltatási szintek, a mérőszámok és az időzítés érthetően dokumentálva vannak.",
+                        "approach.card3.title": "Megvalósítás és támogatás",
+                        "approach.card3.text": "Bevezetjük a rendszereket, összekapcsoljuk az adatokat, automatizáljuk a folyamatokat és betanítjuk a csapatokat. A napi munka megszakítás nélkül folytatódik.",
+                        "approach.card4.title": "Üzemeltetés és optimalizálás",
+                        "approach.card4.text": "Folyamatos monitorozás, támogatás és fejlesztés átlátható jelentésekkel. Kampányokat, folyamatokat és rendszereket finomhangolunk a tartós eredményekért.",
+                        "results.title": "Legfontosabb eredmények",
+                        "results.card1.title": "Stabil rendszerek és elégedett felhasználók",
+                        "results.card1.text": "Proaktív üzemeltetés és jó megvalósítás biztosítja a magas rendelkezésre állást és a zökkenőmentes munkát.",
+                        "results.card2.title": "Több minőségi érdeklődő",
+                        "results.card2.text": "Jó adatok, egyértelmű folyamatok és megfelelő kampányok növelik a keresletet és a lezárási arányt.",
+                        "results.card3.title": "Biztonságos adatok és megfelelés",
+                        "results.card3.text": "Azonosítási kontrollok, végpontvédelem, biztonsági mentések és szabályozott folyamatok csökkentik a kockázatot és bizalmat építenek.",
+                        "results.card4.title": "Átlátható költség és hatás",
+                        "results.card4.text": "Jelentések és mutatók láthatóvá teszik a teljesítményt és segítik a tervezést és döntéshozatalt.",
+                        "about.title": "A Scalentis bemutatása",
+                        "about.text": "IT üzemeltetésben, szoftverfejlesztésben, értékesítésben és marketingben szerzett tapasztalatot egyesítünk. Csapataink vállalkozói szemlélettel dolgoznak és kézzelfogható eredményeket szállítanak. A kommunikáció átlátható, a projektek tervezhetők és az érték mérhető.",
+                        "about.subTitle": "Készen áll a következő lépésre",
+                        "about.subText": "Beszéljünk és válasszuk ki a megfelelő kezdőpontot. Gyors audit vagy folyamatos szolgáltatás, pontosan azt a terjedelmet kapja, amelyre vállalatának szüksége van.",
+                        "about.cta": "Ingyenes konzultáció",
+                        "contact.label": "Kapcsolat",
+                        "contact.title": "Lépjen kapcsolatba velünk",
+                        "contact.text": "Válaszolunk kérdéseire IT, szoftver, értékesítés, marketing és digitális folyamatok témában. Együtt választjuk ki a legjobb indulási pontot és megtervezzük a következő lépéseket.",
+                        "contact.officeLabel": "Központi iroda",
+                        "contact.officeValue": "Címe itt",
+                        "contact.phoneLabel": "Telefon",
+                        "contact.phoneValue": "+49 000 000000",
+                        "contact.mailLabel": "Email",
+                        "contact.mailValue": "contact@scalentis.com",
+                        "contact.formTitle": "Üzenet",
+                        "contact.form.nameLabel": "Név",
+                        "contact.form.namePlaceholder": "Az Ön neve",
+                        "contact.form.phoneLabel": "Telefon",
+                        "contact.form.phonePlaceholder": "Telefonszáma",
+                        "contact.form.mailLabel": "Email",
+                        "contact.form.mailPlaceholder": "Email címe",
+                        "contact.form.messageLabel": "Üzenet",
+                        "contact.form.messagePlaceholder": "Írja le projektjét vagy kérdését",
+                        "contact.form.submit": "Üzenet elküldése",
+                        "legal.object": "A társaság IT, szoftver, értékesítési és marketing szolgáltatásokat, valamint vállalatok számára digitális üzleti folyamatok tanácsadását és megvalósítását nyújtja. A társaság minden olyan ügyletet végezhet, amely közvetlenül vagy közvetve szolgálja a társasági célokat.",
+                        "footer.text": "© Copyright Scalentis | Minden jog fenntartva"
+                    }
+                };
+
+                function setLanguage(lang) {
+                    const dict = translations[lang] || translations.de;
+                    document.documentElement.lang = lang;
+
+                    if (dict["meta.title"]) {
+                        document.title = dict["meta.title"];
+                    }
+                    if (dict["meta.description"]) {
+                        const meta = document.querySelector('meta[name="description"]');
+                        if (meta) meta.setAttribute("content", dict["meta.description"]);
+                    }
+
+                    document.querySelectorAll("[data-i18n]").forEach(function(el) {
+                        const key = el.getAttribute("data-i18n");
+                        if (dict[key]) {
+                            el.textContent = dict[key];
+                        }
+                    });
+
+                    document.querySelectorAll("[data-i18n-placeholder]").forEach(function(el) {
+                        const key = el.getAttribute("data-i18n-placeholder");
+                        if (dict[key]) {
+                            el.placeholder = dict[key];
+                        }
+                    });
+
+                    document.querySelectorAll(".lang-switch").forEach(function(btn) {
+                        if (btn.getAttribute("data-lang") === lang) {
+                            btn.classList.add("bg-gray-900", "text-white");
+                        } else {
+                            btn.classList.remove("bg-gray-900", "text-white");
+                        }
+                    });
+                }
+
+                document.querySelectorAll(".lang-switch").forEach(function(btn) {
+                    btn.addEventListener("click", function() {
+                        const lang = btn.getAttribute("data-lang");
+                        setLanguage(lang);
+                    });
+                });
+
+                // initial
+                setLanguage("de");
+            </script>
+        </body>
+    </html>
