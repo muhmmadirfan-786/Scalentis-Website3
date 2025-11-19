@@ -23,58 +23,80 @@
     <body class="bg-[#FAFAFA] text-black">
         <!-------------------------- Navbar ------------------------->
         <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed w-full z-10">
-            <div class="container">
-                <div class="flex items-center justify-between py-5">
-                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse bg-white p-1 rounded-lg">
-                        <img src="assets/images/icons/Scalentis-Logo3.svg" class="" alt="Scalentis Logo" width="200px" height="">
-                    </a>
-        
-                    <div class="flex items-center sm:gap-5 gap-2">
-                       <div>
-                        <a href="#" class="block py-2 px-3 font-bold bg-transparent text-white text-1xl md:p-0" aria-current="page" data-i18n="nav.start">Start</a>
-                       </div> 
-                        <a href="#" class="orange_bg sm:px-4 px-2 py-2 rounded-lg text-white text-base font-semibold" data-i18n="nav.cta">Kostenlose Erstberatung</a>
-                        <!-- Language Switcher -->
-                        <!-- <div class="flex items-center gap-1 ml-2 text-sm">
-                            <button type="button" class="px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch active" data-lang="de">DE</button>
-                            <button type="button" class="px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch" data-lang="en">EN</button>
-                            <button type="button" class="px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch" data-lang="hu">HU</button>
-                        </div> -->
-                        <!-- Language Switcher -->
-                        <!-- Language Switcher -->
-                            <div class="flex items-center gap-1 ml-2 text-sm">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
 
-                                <!-- German -->
-                                <button type="button"
-                                    class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch active"
-                                    data-lang="de">
-                                    <img src="https://flagcdn.com/w20/de.png" class="w-5 h-4" alt="DE flag">
-                                    <span class="text-white">DE</span>
-                                </button>
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 bg-white p-1 rounded-lg">
+                <img src="assets/images/icons/Scalentis-Logo3.svg" width="180" alt="Scalentis Logo">
+            </a>
 
-                                <!-- English -->
-                                <button type="button"
-                                    class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch"
-                                    data-lang="en">
-                                    <img src="https://flagcdn.com/w20/gb.png" class="w-5 h-4" alt="EN flag">
-                                    <span class="text-white">EN</span>
-                                </button>
-
-                                <!-- Hungarian -->
-                                <button type="button"
-                                    class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 text-gray-800 lang-switch"
-                                    data-lang="hu">
-                                    <img src="https://flagcdn.com/w20/hu.png" class="w-5 h-4" alt="HU flag">
-                                    <span class="text-white">HU</span>
-                                </button>
-
-                            </div>
+            <!-- Mobile Menu Button -->
+            <button id="nav-toggle"
+                class="md:hidden bg-white p-2 rounded-lg shadow text-gray-800 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
 
 
-                    </div>
+            <!-- Menu Items -->
+         <div id="nav-menu"
+          class="hidden flex flex-col md:flex-row md:items-center 
+           gap-4 md:gap-6 
+           bg-gray-900 md:bg-transparent 
+           p-4 md:p-0 
+           absolute md:static left-0 top-20 w-full md:w-auto">
+
+                <!-- Start -->
+                <a href="#" class="py-2 px-3 font-bold text-white md:text-white"
+                    data-i18n="nav.start">
+                    Start
+                </a>
+
+                <!-- CTA -->
+                <a href="#"
+                    class="orange_bg sm:px-4 px-2 py-2 rounded-lg text-white text-base font-semibold"
+                    data-i18n="nav.cta">
+                    Kostenlose Erstberatung
+                </a>
+
+                <!-- Language Switcher -->
+                <div class="flex items-center md:gap-1 gap-3 ml-1 text-sm mt-2 md:mt-0">
+
+                    <!-- German -->
+                    <button type="button"
+                        class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch active"
+                        data-lang="de">
+                        <img src="https://flagcdn.com/w20/de.png" class="w-5 h-4" alt="DE flag">
+                        <span class="text-white">DE</span>
+                    </button>
+
+                    <!-- English -->
+                    <button type="button"
+                        class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch"
+                        data-lang="en">
+                        <img src="https://flagcdn.com/w20/gb.png" class="w-5 h-4" alt="EN flag">
+                        <span class="text-white">EN</span>
+                    </button>
+
+                    <!-- Hungarian -->
+                    <button type="button"
+                        class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch"
+                        data-lang="hu">
+                        <img src="https://flagcdn.com/w20/hu.png" class="w-5 h-4" alt="HU flag">
+                        <span class="text-white">HU</span>
+                    </button>
+
                 </div>
+
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+
         
         <!-------------------------- Hero Section ------------------------->
         <section class="hero-section pt-[150px] pb-6">
@@ -373,6 +395,15 @@
             <!---------------------- Flowbite JS ---------------------->
             <script src="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+    });
+</script>
+
             <script>
                 var swiper = new Swiper(".mySwiper", {
                     loop: true,
