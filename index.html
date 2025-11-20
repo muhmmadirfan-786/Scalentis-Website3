@@ -23,81 +23,58 @@
     <body class="bg-[#FAFAFA] text-black">
         <!-------------------------- Navbar ------------------------->
         <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed w-full z-10">
-    <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between py-4">
-
-            <!-- Logo -->
-            <a href="#" class="flex items-center space-x-3 bg-white p-1 rounded-lg">
-                <img src="assets/images/icons/Scalentis-Logo3.svg" width="180" alt="Scalentis Logo">
-            </a>
-
-            <!-- Mobile Menu Button -->
-            <button id="nav-toggle"
-                class="md:hidden bg-white p-2 rounded-lg shadow text-gray-800 focus:outline-none">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-
-
-            <!-- Menu Items -->
-         <div id="nav-menu"
-    class="hidden md:flex flex flex-col md:flex-row md:items-center 
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between py-4">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center space-x-3 bg-white p-1 rounded-lg">
+                        <img src="assets/images/icons/Scalentis-Logo3.svg" width="180" alt="Scalentis Logo">
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="nav-toggle" class="md:hidden bg-white p-2 rounded-lg shadow text-gray-800 focus:outline-none">
+                        <svg
+                            class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    <!-- Menu Items -->
+                    <div id="nav-menu" class="hidden md:flex flex flex-col md:flex-row md:items-center 
            gap-4 md:gap-6 
-           bg-gray-900 md:bg-transparent 
-           p-4 md:p-0 
-           absolute md:static left-0 top-20 w-full md:w-auto">
-
-                <!-- Start -->
-                <a href="#" class="py-2 px-3 font-bold text-white md:text-white"
-                    data-i18n="nav.start">
-                    Start
-                </a>
-
-                <!-- CTA -->
-                <a href="#"
-                    class="orange_bg sm:px-4 px-2 py-2 rounded-lg text-white text-base font-semibold"
-                    data-i18n="nav.cta">
-                    Kostenlose Erstberatung
-                </a>
-
-                <!-- Language Switcher -->
-                <div class="flex items-center md:gap-1 gap-3 ml-1 text-sm mt-2 md:mt-0">
-
-                    <!-- German -->
-                    <button type="button"
-                        class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch active"
-                        data-lang="de">
-                        <img src="https://flagcdn.com/w20/de.png" class="w-5 h-4" alt="DE flag">
-                        <span class="text-white">DE</span>
-                    </button>
-
-                    <!-- English -->
-                    <button type="button"
-                        class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch"
-                        data-lang="en">
-                        <img src="https://flagcdn.com/w20/gb.png" class="w-5 h-4" alt="EN flag">
-                        <span class="text-white">EN</span>
-                    </button>
-
-                    <!-- Hungarian -->
-                    <button type="button"
-                        class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch"
-                        data-lang="hu">
-                        <img src="https://flagcdn.com/w20/hu.png" class="w-5 h-4" alt="HU flag">
-                        <span class="text-white">HU</span>
-                    </button>
-
+           bg-gray-900 md:bg-transparent p-4 md:p-0 absolute md:static left-0 top-20 w-full md:w-auto">
+                        <!-- Start -->
+                        <a href="#" class="py-2 px-3 font-bold text-white md:text-white" data-i18n="nav.start">
+                            Start
+                        </a>
+                        <!-- CTA -->
+                        <a href="#contact-form" class="orange_bg sm:px-4 px-2 py-2 rounded-lg text-white text-base font-semibold" data-i18n="nav.cta">
+                            Kostenlose Erstberatung
+                        </a>
+                        <!-- Language Switcher -->
+                        <div class="flex items-center md:gap-1 gap-3 ml-1 text-sm mt-2 md:mt-0">
+                            <!-- German -->
+                            <button type="button" class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch active" data-lang="de">
+                                <img src="https://flagcdn.com/w20/de.png" class="w-5 h-4" alt="DE flag">
+                                <span class="text-white">DE</span>
+                            </button>
+                            <!-- English -->
+                            <button type="button" class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch" data-lang="en">
+                                <img src="https://flagcdn.com/w20/gb.png" class="w-5 h-4" alt="EN flag">
+                                <span class="text-white">EN</span>
+                            </button>
+                            <!-- Hungarian -->
+                            <button type="button" class="flex items-center gap-1 px-2 py-1 rounded border border-gray-300 lang-switch" data-lang="hu">
+                                <img src="https://flagcdn.com/w20/hu.png" class="w-5 h-4" alt="HU flag">
+                                <span class="text-white">HU</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-</nav>
-
-        
+        </nav>
         <!-------------------------- Hero Section ------------------------->
         <section class="hero-section pt-[150px] pb-6">
             <div class="container">
@@ -164,7 +141,6 @@
                 </div>
             </div>
         </section>
-
         <section class="bg-white md:py-[80px] py-[40px]">
             <div class="container">
                 <h2 style="line-height: normal;" class="w-full max-w-lg lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 text-center fm_poppines" data-i18n="why.title">Warum Scalentis der richtige Partner ist</h2>
@@ -192,7 +168,6 @@
                 </div>
             </div>
         </section>
-
         <section class="md:py-[80px] py-[40px] ">
             <div class="container">
                 <h2 style="line-height: normal;" class="w-full lg:text-4xl md:text-3xl text-2xl m-auto font-semibold text_neutral_900 text-center fm_poppines" data-i18n="approach.title">Unsere Vorgehensweise</h2>
@@ -240,7 +215,6 @@
                 </div>
             </div>
         </section>
-
         <section class="bg-white md:py-[80px] py-[40px]">
             <div class="container">
                 <div class="flex flex-col lg:flex-row gap-6 ">
@@ -277,7 +251,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="md:py-[80px] py-[40px] coach-section">
                 <div class="container">
                     <div class="w-full bg-white max-w-[1135px] pt-[80px] pb-[78px] ml-auto rounded-lg px-4">
@@ -300,7 +273,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="md:py-[80px] py-[40px] bg-white">
                 <div class="container">
                     <div class="grid md:grid-cols-2 gap-8 ">
@@ -340,7 +312,7 @@
                             </div>
                         </div>
                         <!-- Right Side - Contact Form -->
-                        <div class="bg-[#F7F8F7] p-6 rounded-lg shadow-md">
+                        <div id="contact-form" class="bg-[#F7F8F7] p-6 rounded-lg shadow-md">
                             <div class="flex gap-3">
                                 <img src="assets/images/icons/contact-us.svg" alt="Kontaktformular">
                                 <h2 style="line-height: normal;" class="w-full md:text-3xl text-2xl m-auto font-semibold text_neutral_900 fm_poppines" data-i18n="contact.formTitle">Ihre Nachricht</h2>
@@ -349,16 +321,31 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
                                         <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.nameLabel">Name</label>
-                                        <input type="text" class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Ihr Name">
+                                        <input
+                                            type="text"
+                                            class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                            data-i18n-placeholder="contact.form.namePlaceholder"
+                                            placeholder="Ihr Name"
+                                        >
                                     </div>
                                     <div>
                                         <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.phoneLabel">Telefon</label>
-                                        <input type="text" class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.phonePlaceholder" placeholder="Ihre Telefonnummer">
+                                        <input
+                                            type="text"
+                                            class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                            data-i18n-placeholder="contact.form.phonePlaceholder"
+                                            placeholder="Ihre Telefonnummer"
+                                        >
                                     </div>
                                 </div>
                                 <div class="mt-4">
                                     <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.mailLabel">E Mail</label>
-                                    <input type="email" class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400" data-i18n-placeholder="contact.form.mailPlaceholder" placeholder="Ihre E Mail Adresse">
+                                    <input
+                                        type="email"
+                                        class="p-3 mt-1 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                        data-i18n-placeholder="contact.form.mailPlaceholder"
+                                        placeholder="Ihre E Mail Adresse"
+                                    >
                                 </div>
                                 <div class="mt-4">
                                     <label class="text_neutral_900 text-sm font-normal" data-i18n="contact.form.messageLabel">Nachricht</label>
@@ -372,24 +359,21 @@
                     </div>
                 </div>
             </section>
-
             <!-- Unternehmensgegenstand -->
-            <section class="bg-white pb-4">
+            <!-- <section class="bg-white pb-4">
                 <div class="container">
                     <div class="bg-[#F7F8F7] rounded-lg p-4 text-sm text_neutral_800" data-i18n="legal.object">
                         Gegenstand des Unternehmens ist die Erbringung von IT, Software, Vertriebs und Marketingleistungen sowie die Beratung und Umsetzung digitaler Geschäftsprozesse für Unternehmen. Die Gesellschaft kann alle Geschäfte tätigen, die dem Gesellschaftszweck unmittelbar oder mittelbar zu dienen geeignet sind.
                     </div>
                 </div>
             </section>
-
             <footer class="footer-section bg-black py-5">
                 <div class="container">
                     <div class="flex items-center justify-center flex-wrap gap-3">
                         <p class="text-white text-sm font-normal" data-i18n="footer.text">© Copyright Scalentis | Alle Rechte vorbehalten</p>
                     </div>
                 </div>
-            </footer>
-
+            </footer> -->
             <!-------------------------- Scripts ------------------------->
             <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,container-queries"></script>
             <!---------------------- Flowbite JS ---------------------->
@@ -402,8 +386,7 @@
     navToggle.addEventListener("click", () => {
         navMenu.classList.toggle("hidden");
     });
-</script>
-
+            </script>
             <script>
                 var swiper = new Swiper(".mySwiper", {
                     loop: true,
